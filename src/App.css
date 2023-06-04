@@ -7,14 +7,14 @@ body {
 .wrapper {
   margin: auto;
   text-align: center;
-  max-width: 300px;
-  max-height: 50%;
+  max-width: 400px;
+  height: 50%;
   padding-bottom: 50px;
   background-color: hsl(217, 19%, 24%);
   padding-left: 2.5em;
   padding-right: 2.5em;
   border-radius: 16px;
-  margin-top: 20%;
+  margin-top: 150px;
   box-shadow: 5px 5px 10px rgb(31, 30, 37);
  
 }
@@ -29,6 +29,7 @@ h3 {
 
 p {
   color: hsl(193, 38%, 86%);
+  font-size: 28px;
 }
 
 .divider {
@@ -50,7 +51,12 @@ button {
   transform: translate(0%, -50%);
   cursor: pointer;
   
- 
+}
+
+button:hover {
+  background-color: rgb(229, 229, 229);
+  box-shadow: 5px 5px 10px rgb(81, 81, 82);
+
 }
 .advice-button {
   padding-left: 4px;

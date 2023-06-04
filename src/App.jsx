@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 
 function App() {
+ 
   const [advice, setAdvice] = useState([])
   
   const fetchData = async ()  => {
@@ -24,6 +25,7 @@ function App() {
       <div className="wrapper">
         <h3 id="advice-number">Advice #{advice.id}</h3>
         <p id="advice-text">
+          
           {advice.advice}
         </p>
         <img className="divider" src={Divider} alt="" />
