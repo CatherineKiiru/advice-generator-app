@@ -92,4 +92,4 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 **Have fun building!** 🚀
 
-Start writing the logic - https://github.com/krrish105/Advice-Generator-App/blob/master/script.js
+
