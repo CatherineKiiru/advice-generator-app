@@ -3,6 +3,9 @@ import Divider from "./assets/images/pattern-divider-desktop.svg";
 import button from "./assets/images/icon-dice.svg";
 
 function App() {
+  
+
+
   return (
     <>
       <div className="wrapper">
