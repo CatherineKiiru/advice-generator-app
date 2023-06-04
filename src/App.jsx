@@ -1,39 +1,35 @@
 import "./App.css";
 import Divider from "./assets/images/pattern-divider-desktop.svg";
 import button from "./assets/images/icon-dice.svg";
+import { useEffect, useState } from "react";
 
 
 function App() {
-  const adviceNumber = document.getElementById("advice-number");
-  const adviceText = document.getElementById("advice-text");
+  const [advice, setAdvice] = useState([])
+  
+  const fetchData = async ()  => {
+    const res = await fetch("https://api.adviceslip.com/advice")
+    const data = await res.json()
 
-
-  function showAdvice () {
-    fetch ("https://api.adviceslip.com/advice")
-    .then(response => response.json())
-    .then((data) =>data.slip)
-    .then((data) => {
-      adviceNumber.textContent = data.id;
-      adviceText.textContent = data.advice;
-
-    })
-    .catch((error) => {
-      alert(`Error ${error}`);
-    })
+    console.log(data)
+    setAdvice(data.slip)
   }
 
+  useEffect(() => {
+    fetchData
+  }, [])
+ 
   return (
     <>
       <div className="wrapper">
-        <h3 id="advice-number">Advice #117</h3>
+        <h3 id="advice-number">Advice #{advice.id}</h3>
         <p id="advice-text">
-          {`"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua."`}
+          {advice.advice}
         </p>
         <img className="divider" src={Divider} alt="" />
       </div>
       <div className="button-container">
-        <button onClick={showAdvice} id="button">
+        <button onClick={fetchData} id="button">
           <img className="advice-button" src={button} alt="" />
         </button>
       </div>
