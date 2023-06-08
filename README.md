@@ -20,10 +20,6 @@ This project involved building an advice generator app that fetches data from th
   ![](src/assets/images/app-screenshot.png)
 
 
-- [Links](#links)
-  - Solution URL: [Add solution URL here](https://your-solution-url.com)
-  - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 - [Built with](#built-with)
 
   - CSS custom properties
