@@ -27,8 +27,8 @@ This project involved building an advice generator app that fetches data from th
   - Mobile-first workflow
   - [React](https://reactjs.org/) - JS library
 
-## project Links
-www.advicegeneratorapp.com 
+## Live Site
+https://catherine-kiiru-advice-generator.netlify.app/ 
 
 ## What i learned
 
